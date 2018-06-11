@@ -233,3 +233,9 @@ defaults write com.apple.appstore WebKitDeveloperExtras -bool true
 # Prevent Photos from opening automatically when devices are plugged in
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 
+###############################################################################
+# More                                                                        #
+###############################################################################
+
+# Open Text files with sublime-text instead of TextEdit
+defaults write com.apple.LaunchServices/com.apple.launchservices.secure LSHandlers -array-add '{LSHandlerContentType=public.plain-text;LSHandlerRoleAll=com.sublimetext.3;}'
