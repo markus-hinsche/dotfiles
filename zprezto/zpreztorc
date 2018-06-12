@@ -30,7 +30,10 @@ zstyle ':prezto:load' pmodule \
   'directory' \
   'utility' \
   'completion' \
+  'docker' \
   'git' \
+  'ssh' \
+  'python' \
   'prompt' \
   'syntax-highlighting' \
   'history-substring-search'
