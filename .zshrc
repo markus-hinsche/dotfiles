@@ -23,6 +23,9 @@ eval "$(scmpuff init -s)"
 # Aliases
 alias ll="ls -alh"
 
+# Enable file overwrite: e.g. with existing newfile.txt: echo "foo" > newfile.txt  
+setopt clobber
+
 # Python virtualenvwrapper
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Development
@@ -32,4 +35,3 @@ source /usr/local/bin/virtualenvwrapper_lazy.sh
 # NodeJS: NVM (node version manager)
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-
