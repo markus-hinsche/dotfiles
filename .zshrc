@@ -30,6 +30,7 @@ setopt clobber
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Development
 export VIRTUALENVWRAPPER_SCRIPT=/usr/local/bin/virtualenvwrapper.sh
+VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
 source /usr/local/bin/virtualenvwrapper_lazy.sh
 
 # NodeJS: NVM (node version manager)
