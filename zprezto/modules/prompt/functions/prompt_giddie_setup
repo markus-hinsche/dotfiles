@@ -65,10 +65,14 @@ function prompt_giddie_setup {
   zstyle ':vcs_info:git*+set-message:*' hooks set_vcs_prompt_symbol git_precmd
   zstyle ':vcs_info:*+set-message:*' hooks set_vcs_prompt_symbol
 
+  # Set python-info parameters.
+  zstyle ':prezto:module:python:info:virtualenv' format '(%v)'
+
   # Define prompts.
   PROMPT='%(?..%F{red}%B-> [%?]%b%f
 )%F{magenta}%n%f@%F{yellow}%m%f|%F{green}${_prompt_giddie_pwd}%f${vcs_info_msg_0_}
-%F{blue}${_prompt_giddie_symbol}%f '
+%F{blue}${_prompt_giddie_symbol}%f 
+${python_info[virtualenv]} '
   RPROMPT='${editor_info[keymap]}'
   SPROMPT='zsh: correct %F{magenta}%R%f to %F{green}%r%f [nyae]? '
 }
